@@ -31,13 +31,13 @@ namespace WriteCalEvent.Views {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameValidator;
         
         /// <summary>
-        /// txtAppointmentName control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAppointmentName;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
         /// LastNameValidator control.
@@ -112,22 +112,22 @@ namespace WriteCalEvent.Views {
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// ReTypePasswordFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReTypePasswordFieldValidator;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtRetypePassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtRetypePassword;
         
         /// <summary>
         /// btncancel control.

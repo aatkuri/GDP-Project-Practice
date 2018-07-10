@@ -12,11 +12,11 @@
                     <div class="form-group col-md-6">
                         <div id="nameFormGroup" class="form-group">
                             <asp:RequiredFieldValidator ID="FirstNameValidator" runat="server"
-                                ControlToValidate="txtAppointmentName"
+                                ControlToValidate="txtFirstName"
                                 ErrorMessage="First Name is required." ForeColor="Red"> *
                             </asp:RequiredFieldValidator>
-                            <label for="txtAppointmentName">First Name:</label>
-                            <asp:TextBox runat="server" CssClass="form-control" ID="txtAppointmentName" ClientIDMode="Static"></asp:TextBox>
+                            <label for="txtFirstName">First Name:</label>
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtFirstName" ClientIDMode="Static"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                             <asp:RequiredFieldValidator ID="EmailFieldValidator" runat="server"
                                 ControlToValidate="txtEmail"
                                 ErrorMessage="Email is required." ForeColor="Red"> *
-                            </asp:RequiredFieldValidator>
+                            </asp:RequiredFieldValidator>                            
                             <label for="txtAppointmentDescription">Email:</label>
                             <asp:TextBox runat="server" CssClass="form-control description" ClientIDMode="Static" ID="txtEmail"></asp:TextBox>
                         </div>
@@ -53,7 +53,7 @@
                                 ErrorMessage="Phone Number is required." ForeColor="Red"> *
                             </asp:RequiredFieldValidator>
                             <label for="txtAttendee">Phone Number:</label>
-                            <asp:TextBox runat="server" CssClass="form-control description" ClientIDMode="Static" TextMode="MultiLine" ID="txtPhoneNumber"></asp:TextBox>
+                            <asp:TextBox runat="server" CssClass="form-control description" ClientIDMode="Static" ID="txtPhoneNumber"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -84,8 +84,8 @@
 
                 <div class="row-fluid">
                     <div class="col-md-12 btn-toolbar">
-                        <asp:Button ID="btncancel" Text="Cancel" runat="server" CssClass="btn btn-defualt pull-left" CausesValidation="false" />
-                        <asp:Button ID="btnRegister" Text="Register" runat="server" CssClass="btn btn-success pull-right" />
+                        <asp:Button ID="btncancel" Text="Cancel" runat="server" CssClass="btn btn-defualt pull-left" CausesValidation="false" OnClick="btncancel_Click" />
+                        <asp:Button ID="btnRegister" Text="Register" runat="server" CssClass="btn btn-success pull-right" OnClick="btnRegister_Click" CausesValidation="true" />
                     </div>
                 </div>
             </div>

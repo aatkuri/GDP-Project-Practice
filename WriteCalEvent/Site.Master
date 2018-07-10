@@ -47,17 +47,35 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/OfficeHoursHome.aspx">Office Hours</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a href="Views/Register.aspx">Register</a></li>
-                        <li><a href="Views/Login.aspx">Login</a></li>
-                    </ul>
-                </div>
+                    <asp:PlaceHolder ID="PostLoginNav" runat="server" Visible="false">
+                        <ul class="nav navbar-nav">
+                            <li><a runat="server" href="~/Views/FacultyHome.aspx">Home</a></li>
+                            <li><a runat="server" href="~/Views/FacultyViewMessage.aspx">View Messages</a></li>
+                            <li><a runat="server" href="~/About">About</a></li>
+                            <li><a runat="server" href="~/Contact">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li style="font-weight: bolder;"><a runat="server" id="welcomeItem">Welcome,</a></li>
+                            <li style="float: right;"><a runat="server" href="~/Views/Logout.aspx">Logout</a></li>
+                        </ul>
+                    </asp:PlaceHolder>
+                    <asp:PlaceHolder ID="PreLoginNav" runat="server" Visible="false">
+                        <ul class="nav navbar-nav pull-right">
+                            <li style="float: right;"><a runat="server" id="facultyLogin" href="~/Views/Login.aspx">Log In</a></li>
+                        </ul>
+                    </asp:PlaceHolder>
+                    <asp:PlaceHolder ID="studentPostLogin" runat="server" Visible="false">
+                        <ul class="nav navbar-nav">
+                            <li><a href="StudentHome.aspx">StudentHome</a></li>                            
+                            <li><a runat="server" id="imageCapture" href="~/Views/ImageCapture.aspx">ImageCapture</a></li>
+                            <li><a runat="server" id="StudAppointment" href="~/Views/StudentScheduleAppointment.aspx">StudentScheduleAppointment</a></li>
+                            <li><a runat="server" id="StudMessage" href="~/Views/StudentAddMessage.aspx">Send Message</a></li>
+                        </ul>
+                    </asp:PlaceHolder>
+                </div>                
             </div>
         </div>
         <div class="container body-content">
@@ -70,5 +88,6 @@
         </div>
 
     </form>
+    <asp:ContentPlaceHolder ID="JavascriptFiles" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>
