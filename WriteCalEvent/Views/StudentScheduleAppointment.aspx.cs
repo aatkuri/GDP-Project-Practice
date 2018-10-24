@@ -44,12 +44,14 @@ namespace WriteCalEvent
                 Start = new EventDateTime()
                 {
                     DateTime = startDateTime,
-                    TimeZone = response.Data.timeZoneId,
+                    //TimeZone = response.Data.timeZoneId,
+                    TimeZone = "America/Chicago"
                 },
                 End = new EventDateTime()
                 {
                     DateTime = endDateTime,
-                    TimeZone = response.Data.timeZoneId,
+                    //TimeZone = response.Data.timeZoneId,
+                    TimeZone = "America/Chicago"
                 },
                 Recurrence = new String[] { "RRULE:FREQ=DAILY;COUNT=1" },
                 Attendees = GetEventAttendees(),

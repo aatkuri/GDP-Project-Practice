@@ -21,7 +21,7 @@ namespace WriteCalEvent.Views
             DayOfWeek day = DateTime.Now.DayOfWeek;
             int days = day - DayOfWeek.Monday;
             DateTime start = DateTime.Now.AddDays(-days);
-            DateTime end = start.AddDays(4);
+            DateTime end = start.AddDays(5);
 
             gridScheduleEvent.DataSource = facultySchedule.BuildScheduleDataTablePrototype(facultySchedule.GetFacultyScheduleByMailandDate(
                                         Session["Email"].ToString(), start, end));

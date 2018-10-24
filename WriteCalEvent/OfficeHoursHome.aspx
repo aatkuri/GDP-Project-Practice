@@ -10,7 +10,6 @@
             <div class="panel-heading">
                 <strong runat="server" id="panelHeader" class="h1">Select a View</strong>
             </div>
-            <div class="panel-body">
                 <div class="row" style="padding-left: 15px">
                     <div class="form-group col-md-5 col-sm-5">
                         <asp:ImageButton ID="viewAttendeeButton" runat="server"
